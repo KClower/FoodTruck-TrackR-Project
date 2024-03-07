@@ -13,7 +13,7 @@
 
 <body>
 
-    <nav class="nav-container">
+    <nav class="nav-container" id="home">
         <h1 class="logo">FoodTruck TrackR</h1>
         <div>
             <a class="tabs" href="#home">Home</a>
@@ -27,7 +27,7 @@
 
     <div class="wrapper">
 
-        <section id="home">
+        <section>
             <div class="flex">
                 <div class="tacos-image"></div>
                 <div class="text">
@@ -41,14 +41,15 @@
 
 
             <section class="flex2">
-                <div class="text"> 
-                        <p>FoodTruck TrackR was designed to make finding and eating at a food truck fast, easy and fun. Quickly
-                            see all of our Operator partners' nearby food trucks that currently open, view their current
-                            real-time GPS location, know the scheduled arrival and departure times, view photos, read
-                            customer reviews and much more, all in our easy to use app. </p>
-                            <div>
-                    <button>Download App</button>
-                </div>
+                <div class="text">
+                    <p>FoodTruck TrackR was designed to make finding and eating at a food truck fast, easy and fun.
+                        Quickly
+                        see all of our Operator partners' nearby food trucks that currently open, view their current
+                        real-time GPS location, know the scheduled arrival and departure times, view photos, read
+                        customer reviews and much more, all in our easy to use app. </p>
+                    <div>
+                        <button>Download App</button>
+                    </div>
                 </div>
                 <div class="image-container">
                     <img src="assets/images/food-truck-seating.jpg" alt="">
@@ -56,9 +57,11 @@
             </section>
 
         </section>
+
         <h2>Customer Reviews</h2>
+
         <section class="reviews" id="reviews">
-            
+
             <div>
                 <div class="personal-image">
                     <img src="assets/images/man1.jpg" alt="man smiling">
@@ -104,32 +107,37 @@
                     <span class="fa fa-star"></span>
                 </div>
                 <h3>Chris P.</h3>
-                 <button>More Reviews</button>
+                <button>More Reviews</button>
             </div>
-           
+
         </section>
-       
+
+
         <section>
             <div>
-                <h4>Try FoodTruck TrackR today and enjoy the best food YOUR city has to offer.</h4>
+                <h3>Try FoodTruck TrackR today and enjoy the best food YOUR city has to offer.</h3>
             </div>
             <div>
-                <div class="image-container">
-                    <img src="assets/images/city-view.jpg" alt="view of city">
+                <div class="city-image"></div>
+
+                <div class="newsletter">
+                    <div class="subscribe">
+                        <p>Subscribe to our newsletter</p>
+                        <a class="email" href="#">Email Address</a>
+                        <!-- <button>Email address</button> -->
+                        <button>Subscribe</button>
+                    </div>
+                    <div>
+                        <a href="#" class="social-link fa fa-facebook"></a>
+                        <a href="#" class="social-link fa fa-instagram"></a>
+                        <a href="#" class="social-link fa fa-twitter"></a>
+                        <a href="#" class="social-link fa fa-linkedin"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="newsletter">
-                <p>Subscribe to our newsletter</p>
-                <button>Email address</button>
-                <button>Subscribe</button>
-                <a href="#" class="social-link fa fa-facebook"></a>
-                <a href="#" class="social-link fa fa-instagram"></a>
-                <a href="#" class="social-link fa fa-twitter"></a>
-                <a href="#" class="social-link fa fa-linkedin"></a>
             </div>
         </section>
 
-        <section id="operators">
+        <section class="operators" id="operators">
             <h2>Business owners and Operators</h2>
             <p>Welcome to our platform, where food truck operators like you can unlock a world of opportunities to
                 elevate your business and connect with eager diners. By joining our vibrant community, you gain access
@@ -140,7 +148,7 @@
                 embark on a journey towards culinary success!</p>
         </section>
 
-        <section>
+        <section class="options">
             <div class="operator-options">
                 <div class="options-image">
                     <i class="fa-solid fa-truck"></i>
@@ -162,6 +170,8 @@
                     offerings. With the ability to showcase customer ratings for each menu item, operators can highlight
                     crowd favorites and entice diners to explore their diverse selection of dishes.</p>
             </div>
+        </section>
+        <section class="options">
             <div class="operator-options">
                 <div class="options-image">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -190,19 +200,21 @@
                     showcase their trucks and engage with diners, ultimately fostering a vibrant and thriving food truck
                     community.</p>
         </section>
-
-        <button class="operator-sign-up">Sign up as Food Truck Operator</button>
+        <div class="operator-sign-up">
+            <button>Sign up as Food Truck Operator</button>
+        </div>
 
         <footer id="contact">
-            <h3>Contact Info:</h3>
+            <h4>Contact Info:</h4>
             <br>
-            <h3>Phone</h3>
+            <br>
+            <h4>Phone</h4>
             <p>1-555-867-5309</p>
-            <br>
-            <h3>Address</h3>
+            
+            <h4>Address</h4>
             <p>New York, NY</p>
-            <br>
-            <h3>E-mail</h3>
+            
+            <h4>E-mail</h4>
             <p>foodtruckr@gmail.com</p>
         </footer>
     </div>
