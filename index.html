@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b099c8462a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
+
     <title>Food Truck Project</title>
 </head>
 
@@ -15,23 +16,21 @@
     <nav class="nav-container">
         <h1 class="logo">FoodTruck TrackR</h1>
         <div>
-            <a class="tabs" href="home">Home</a>
-            <a class="tabs" href="reviews">Reviews</a>
-            <a class="tabs" href="contact">Contact</a>
-            <a class="tabs" href="operators">Operators</a>
-            <a class="signin" href="sign-in">Sign-In</a>
+            <a class="tabs" href="#home">Home</a>
+            <a class="tabs" href="#reviews">Reviews</a>
+            <a class="tabs" href="#contact">Contact</a>
+            <a class="tabs" href="#operators">Operators</a>
+            <a class="tabs" href="sign-in">Sign-In</a>
         </div>
     </nav>
 
 
     <div class="wrapper">
 
-        <section>
+        <section id="home">
             <div class="flex">
-                <div class="image-container">
-                    <img src="assets/images/tasty-tacos.jpg" alt="tasty tacos">
-                </div>
-                <div>
+                <div class="tacos-image"></div>
+                <div class="text">
                     <p>Every true "foodie" worth their salt knows that some of the best food in any city can be found on
                         food trucks - but knowing when and where those trucks will be can be next to impossible, and
                         discovering new ones often relies on word-of-mouth that is long on tales of delicious, but short
@@ -39,77 +38,98 @@
                     </p>
                 </div>
             </div>
-            <div>
-                <p>FoodTruck TrackR was designed to make finding and eating at a food truck fast, easy and fun. Quickly
-                    see all of our Operator partners' nearby food trucks that currently open, view their current
-                    real-time GPS location, know the scheduled arrival and departure times, view photos, read customer
-                    reviews and much more, all in our easy to use app. </p>
-                <button>Download App</button>
-            </div>
-            <div class="image-container">
-                <img src="assets/images/food-truck-seating.jpg" alt="">
-            </div>
+
+
+            <section class="flex2">
+                <div class="text"> 
+                        <p>FoodTruck TrackR was designed to make finding and eating at a food truck fast, easy and fun. Quickly
+                            see all of our Operator partners' nearby food trucks that currently open, view their current
+                            real-time GPS location, know the scheduled arrival and departure times, view photos, read
+                            customer reviews and much more, all in our easy to use app. </p>
+                            <div>
+                    <button>Download App</button>
+                </div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/food-truck-seating.jpg" alt="">
+                </div>
+            </section>
+
         </section>
-
-        <section>
-            <h2>Customer Reviews</h2>
+        <h2>Customer Reviews</h2>
+        <section class="reviews" id="reviews">
+            
             <div>
-                <img src="assets/images/man1.jpg" alt="man smiling">
-
+                <div class="personal-image">
+                    <img src="assets/images/man1.jpg" alt="man smiling">
+                </div>
                 <p>"Wow! What an incredible find! I stumbled upon Torchys Tacos through this platform, and it was a
                     game-changer for my lunchtime routine." </p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
                 <h3>Brian S.</h3>
             </div>
             <div>
-                <img src="assets/images/woman1.jpg" alt="woman smiling">
+                <div class="personal-image">
+                    <img src="assets/images/woman1.jpg" alt="woman smiling">
+                </div>
                 <p>"I had high hopes for Biscuits and Groovy after reading positive reviews, but unfortunately, my
                     experience fell short of expectations. The menu options were limited, and what was available lacked
                     creativity and excitement."</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
                 <h3>Karen B.</h3>
             </div>
             <div>
-                <img src="assets/images/man2.jpg" alt="man smiling">
+                <div class="personal-image">
+                    <img src="assets/images/man2.jpg" alt="man smiling">
+                </div>
                 <p>"I've since become a regular, eagerly awaiting to find the location of my favorite food truck and
                     eagerly anticipating the culinary delights that await."</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
                 <h3>Chris P.</h3>
+                 <button>More Reviews</button>
             </div>
-            <button>More Reviews</button>
+           
         </section>
-
+       
         <section>
             <div>
                 <h4>Try FoodTruck TrackR today and enjoy the best food YOUR city has to offer.</h4>
             </div>
             <div>
-                <img src="assets/images/city-view.jpg" alt="view of city">
+                <div class="image-container">
+                    <img src="assets/images/city-view.jpg" alt="view of city">
+                </div>
             </div>
             <div class="newsletter">
                 <p>Subscribe to our newsletter</p>
                 <button>Email address</button>
                 <button>Subscribe</button>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="social-link fa fa-facebook"></a>
+                <a href="#" class="social-link fa fa-instagram"></a>
+                <a href="#" class="social-link fa fa-twitter"></a>
+                <a href="#" class="social-link fa fa-linkedin"></a>
             </div>
         </section>
 
-        <section>
+        <section id="operators">
             <h2>Business owners and Operators</h2>
             <p>Welcome to our platform, where food truck operators like you can unlock a world of opportunities to
                 elevate your business and connect with eager diners. By joining our vibrant community, you gain access
@@ -123,7 +143,7 @@
         <section>
             <div class="operator-options">
                 <div class="options-image">
-                    <img src="assets/images/food-truck.jpg" alt="food truck">
+                    <i class="fa-solid fa-truck"></i>
                 </div>
                 <h3>Creating a Truck Profile:</h3>
                 <p>Operators on our platform can effortlessly create detailed profiles for their food trucks, ensuring
@@ -134,7 +154,7 @@
             </div>
             <div class="operator-options">
                 <div class="options-image">
-                    <img src="assets/images/menu.jpg" alt="menu">
+                    <i class="fa-solid fa-utensils"></i>
                 </div>
                 <h3>Menu Management:</h3>
                 <p>Our platform empowers operators to manage their truck's menu with ease. From adding new menu items to
@@ -144,10 +164,10 @@
             </div>
             <div class="operator-options">
                 <div class="options-image">
-                    <img src="assets/images/update.jpg" alt="typewriter typing update">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
                 </div>
-                <h3>Viewing and Updating Truck Information:</h3>
-                <p>Once a truck profile is created, operators have the flexibility to view and update the truck's
+                <h3>Uploading New Truck Information:</h3>
+                <p>Once a truck profile is created, operators have the flexibility to update and upload the truck's
                     information as needed. Whether it's adding mouth-watering new menu items, updating the truck's
                     location, or refreshing images to captivate diners, our platform provides operators with intuitive
                     tools to keep their truck's profile current and engaging.
@@ -158,7 +178,7 @@
             </div>
             <div class="operator-options">
                 <div class="options-image">
-                    <img src="assets/images/location.jpg" alt="phone showing google maps">
+                    <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <h3>Location Management:</h3>
                 <p>Managing the current and next locations of a food truck is crucial for operators to effectively
@@ -173,7 +193,7 @@
 
         <button class="operator-sign-up">Sign up as Food Truck Operator</button>
 
-        <footer>
+        <footer id="contact">
             <h3>Contact Info:</h3>
             <br>
             <h3>Phone</h3>

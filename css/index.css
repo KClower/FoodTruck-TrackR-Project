@@ -134,16 +134,43 @@ html {
 .wrapper {
   padding: 30px 40px;
 }
-img {
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+}
+h3 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.image-container img {
   max-width: 100%;
 }
-h1 {
-  font-size: 2.9rem;
+.personal-image img {
+  width: 100px;
+  border-radius: 50px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 .checked {
-  color: yellow;
+  color: orange;
 }
-.fa {
+.social-link {
   padding: 10px;
   font-size: 15px;
   width: 50px;
@@ -169,6 +196,9 @@ h1 {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+.fa-solid {
+  font-size: 50px;
 }
 .nav-container {
   display: flex;
@@ -202,7 +232,7 @@ h1 {
   color: darkblue;
   font-weight: 700;
 }
-.nav-container .signin {
+.nav-container .tabs:last-of-type {
   color: blue;
   text-decoration: none;
   font-size: 1.6rem;
@@ -210,7 +240,52 @@ h1 {
   background-color: grey;
   border-radius: 5px;
 }
-.nav-container .signin:hover {
+.nav-container .tabs:last-of-type:hover {
   color: green;
   font-weight: 700;
+}
+.flex div {
+  width: 49%;
+  margin-bottom: 20px;
+}
+.flex div.tacos-image {
+  background-image: url("../assets/images/tasty-tacos.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 325px;
+}
+.flex div.text {
+  padding: 65px 20px;
+}
+.flex2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 120px;
+}
+.flex2 .text {
+  margin-top: 30px;
+  padding: 0 20px;
+  text-align: center;
+}
+.flex2 div {
+  width: 49%;
+  margin: 0 auto;
+}
+.flex2 button {
+  margin-top: 50px;
+}
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.reviews div {
+  width: 27%;
+}
+.reviews .personal-image {
+  padding: 10px 0 30px 70px;
+}
+.reviews button {
+  margin: 30px 0 0 110px;
 }
