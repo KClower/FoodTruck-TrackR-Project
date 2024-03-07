@@ -1,8 +1,15 @@
+
+
+
+
 .flex {
-    div {
+    div.tacos-image, div.text {
         width: 49%;
         margin-bottom: 20px;
-
+        @media screen and @mobile {
+            display: flex;
+          
+            }
     }
 
     div.tacos-image {
@@ -14,10 +21,19 @@
         @media screen and @tablet {
             margin-top: 30px;
         }
+        @media screen and @mobile {
+            width: 100%;
+            margin: 0;
+        }
     }
 
     div.text {
         padding: 65px 20px;
+        @media screen and @mobile {
+            width: 100%;
+            padding: 10px 0 30px 0;
+            
+        }
     }
 }
 
@@ -29,19 +45,32 @@
     @media screen and @tablet {
         padding-bottom: 60px;
     }
+    @media screen and @mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        }
 
     .text {
+        display: grid;
         margin-top: 30px;
         padding: 0 20px;
         text-align: center;
         @media screen and @tablet {
             margin: 0;
         }
+        @media screen and @mobile {
+           padding: 10px 0;
+            }
     }
 
     div {
         width: 49%;
         margin: 0 auto;
+        @media screen and @mobile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            }
     }
 
     button {
@@ -53,24 +82,44 @@
 }
 
 .reviews {
-    display: flex;
-    justify-content: space-between;
+   text-align: center;
     padding: 30px 0 60px 0;
+    @media screen and @mobile {
+        display: block;
+        width: 100%;
+        padding-top: 0;
+    
+    }
 
-    div {
+    div.review {
         width: 27%;
         background-color: #F5F5F5;
+        @media screen and @mobile {
+            display: block;
+            width: 100%;
+          
+        }
     }
 
     .personal-image {
         padding: 10px 0 30px 70px;
+        @media screen and @mobile {
+            padding: 20px 0 0 0;
+        }
 
     }
 
     button {
-        margin: 30px 0 0 110px;
+        margin-top: 20px;
+        
         @media screen and @tablet {
-            margin: 70px 0 0 50px;
+            margin: 20px 0 0 50px;
+        }
+        @media screen and @mobile {
+            width: 100%;
+            margin: 0;
+            margin-top: 20px;
+        
         }
     }
 }
@@ -82,26 +131,45 @@ div.city-image {
     background-position: center;
     height: 175px;
     margin-bottom: 10px;
+    @media screen and @mobile {
+        height: 100px;
+    } 
+}
+.news-social-container{
+    display: flex;
+    justify-content: space-between;
+    @media screen and @tablet{
+        display: block;
+    }
+ 
 }
 .newsletter{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .subscribe{
-        display: flex;
-    }
-    .email{
-        color: grey;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding: 10px 100px 10px 5px;
-        border: 1px solid black;   
-        margin: 0 5px; 
-    }
     @media screen and @tablet {
+         justify-content: flex-start;
+    }
+    @media screen and @mobile {
         display: block;
     }
+  
+    .subscribe{
+        display: flex;
+        @media screen and @mobile {
+            padding-bottom: 10px;
+        }
+        .email{
+            color: grey;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding-left: 5px;
+            border: 1px solid black;   
+            margin: 0 5px; 
+        }
+    }
+   
 }
 
 .operators{
@@ -117,9 +185,21 @@ div.city-image {
  display: flex; 
  justify-content: space-between;  
  padding-top: 40px;
+@media screen and @mobile {
+    display: block;
+    padding-top: 0;
+   
+}
+
  .operator-options{
     width: 48%;
+    @media screen and @mobile {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
  }
+
  .options-image{
 text-align: center;
  }
@@ -130,7 +210,12 @@ text-align: center;
 .operator-sign-up{
 padding: 20px 0 60px 350px;
 @media screen and @tablet {
-    padding: 0 0 60px 350px;
+    padding: 10px 0 60px 200px;
+}
+@media screen and @mobile {
+    padding: 0;
+    padding: 10px 0 80px 0;
+    width: 100%;
 }
 }
 

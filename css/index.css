@@ -162,6 +162,11 @@ p {
     margin-top: 40px;
   }
 }
+@media screen and (max-width: 500px) {
+  .image-container img {
+    margin-top: 0;
+  }
+}
 .personal-image img {
   width: 100px;
   border-radius: 50px;
@@ -170,9 +175,17 @@ p {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 500px) {
+  .flex {
+    display: block;
+  }
+}
 button {
   font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
   font-weight: 700;
+  border: 1px solid black;
   padding: 10px 20px;
   border-radius: 5px;
 }
@@ -182,7 +195,19 @@ button:hover {
 }
 @media screen and (max-width: 750px) {
   button {
-    padding: 5px ;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .star-rating {
+    margin: 0;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 .checked {
@@ -262,9 +287,16 @@ button:hover {
   color: green;
   font-weight: 700;
 }
-.flex div {
+.flex div.tacos-image,
+.flex div.text {
   width: 49%;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  .flex div.tacos-image,
+  .flex div.text {
+    display: flex;
+  }
 }
 .flex div.tacos-image {
   background-image: url("../assets/images/tasty-tacos.jpg");
@@ -277,8 +309,20 @@ button:hover {
     margin-top: 30px;
   }
 }
+@media screen and (max-width: 500px) {
+  .flex div.tacos-image {
+    width: 100%;
+    margin: 0;
+  }
+}
 .flex div.text {
   padding: 65px 20px;
+}
+@media screen and (max-width: 500px) {
+  .flex div.text {
+    width: 100%;
+    padding: 10px 0 30px 0;
+  }
 }
 .flex2 {
   display: flex;
@@ -291,7 +335,14 @@ button:hover {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width: 500px) {
+  .flex2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .flex2 .text {
+  display: grid;
   margin-top: 30px;
   padding: 0 20px;
   text-align: center;
@@ -301,9 +352,21 @@ button:hover {
     margin: 0;
   }
 }
+@media screen and (max-width: 500px) {
+  .flex2 .text {
+    padding: 10px 0;
+  }
+}
 .flex2 div {
   width: 49%;
   margin: 0 auto;
+}
+@media screen and (max-width: 500px) {
+  .flex2 div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .flex2 button {
   margin-top: 50px;
@@ -314,23 +377,47 @@ button:hover {
   }
 }
 .reviews {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
   padding: 30px 0 60px 0;
 }
-.reviews div {
+@media screen and (max-width: 500px) {
+  .reviews {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+  }
+}
+.reviews div.review {
   width: 27%;
   background-color: #F5F5F5;
+}
+@media screen and (max-width: 500px) {
+  .reviews div.review {
+    display: block;
+    width: 100%;
+  }
 }
 .reviews .personal-image {
   padding: 10px 0 30px 70px;
 }
+@media screen and (max-width: 500px) {
+  .reviews .personal-image {
+    padding: 20px 0 0 0;
+  }
+}
 .reviews button {
-  margin: 30px 0 0 110px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 750px) {
   .reviews button {
-    margin: 70px 0 0 50px;
+    margin: 20px 0 0 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .reviews button {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
   }
 }
 div.city-image {
@@ -340,27 +427,51 @@ div.city-image {
   height: 175px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 500px) {
+  div.city-image {
+    height: 100px;
+  }
+}
+.news-social-container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 750px) {
+  .news-social-container {
+    display: block;
+  }
+}
 .newsletter {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 750px) {
+  .newsletter {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 500px) {
+  .newsletter {
+    display: block;
+  }
+}
 .newsletter .subscribe {
   display: flex;
 }
-.newsletter .email {
+@media screen and (max-width: 500px) {
+  .newsletter .subscribe {
+    padding-bottom: 10px;
+  }
+}
+.newsletter .subscribe .email {
   color: grey;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  padding: 10px 100px 10px 5px;
+  padding-left: 5px;
   border: 1px solid black;
   margin: 0 5px;
-}
-@media screen and (max-width: 750px) {
-  .newsletter {
-    display: block;
-  }
 }
 .operators h2 {
   padding-top: 90px;
@@ -374,8 +485,21 @@ div.city-image {
   justify-content: space-between;
   padding-top: 40px;
 }
+@media screen and (max-width: 500px) {
+  .options {
+    display: block;
+    padding-top: 0;
+  }
+}
 .options .operator-options {
   width: 48%;
+}
+@media screen and (max-width: 500px) {
+  .options .operator-options {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
 }
 .options .options-image {
   text-align: center;
@@ -388,6 +512,13 @@ div.city-image {
 }
 @media screen and (max-width: 750px) {
   .operator-sign-up {
-    padding: 0 0 60px 350px;
+    padding: 10px 0 60px 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .operator-sign-up {
+    padding: 0;
+    padding: 10px 0 80px 0;
+    width: 100%;
   }
 }

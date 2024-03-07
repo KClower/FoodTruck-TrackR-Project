@@ -7,7 +7,7 @@
 html {
     font-size: 62.5%;
     font-family: roboto;
-    
+
 
 }
 
@@ -19,17 +19,20 @@ html {
 h1 {
     font-size: 3.0rem;
 }
-h2{
+
+h2 {
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
     text-decoration: underline;
 }
-h3{
+
+h3 {
     font-size: 1.8rem;
     text-align: center;
 }
-h4{
+
+h4 {
     font-size: 1.6rem;
 }
 
@@ -41,43 +44,70 @@ p {
 .image-container {
     img {
         max-width: 100%;
+
         @media screen and @tablet {
             margin-top: 40px;
         }
+
+        @media screen and @mobile {
+            margin-top: 0;
+        }
     }
-  
+
 }
-.personal-image{
-    img{
-        width: 100px;
+
+.personal-image {
+    img {
+        width: 100px;  
         border-radius: 50px;
     }
-    }
-    
+}
 
-.flex{
+
+.flex {
     display: flex;
     justify-content: space-between;
+    @media screen and @mobile {
+        display: block;
+    }
 
 }
 
-button {    
+button {
     font-size: 1.6rem;
+    color: black;
+    text-decoration: none;
     font-weight: 700;
+    border: 1px solid black;
     padding: 10px 20px;
     border-radius: 5px;
-    &:hover{
+
+    &:hover {
         background-color: black;
         color: white;
     }
+
     @media screen and @tablet {
-        padding: 5px ;
+        padding: 5px;
+    }
+    @media screen and @mobile {
+        width: 100%;
     }
 }
+.star-rating{
 
+    @media screen and @mobile {
+        margin: 0;
+      margin: 0 auto;
+      justify-content: center;
+    
+    }
+}
 .checked {
     color: orange;
+  
 }
+
 .social-link {
     padding: 10px;
     font-size: 15px;
@@ -111,6 +141,7 @@ button {
     background: #125688;
     color: white;
 }
-.fa-solid{
+
+.fa-solid {
     font-size: 50px;
 }
